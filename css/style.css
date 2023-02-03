@@ -116,10 +116,10 @@ header {
     padding: 10px;
     color: #ffff; }
     .footer .redes .redes1 .ig {
-      color: #dc143c;
+      color: #df3838;
       grid-area: area1; }
     .footer .redes .redes1 .fb {
-      color: #0000ff;
+      color: #254bf3;
       grid-area: area3; }
     .footer .redes .redes1 .tw {
       color: #7fffd4;
@@ -161,12 +161,12 @@ header {
       border-radius: 20px;
       box-shadow: 10px 0px 15px 0px #000000; }
     .main .resumen .txt-resumen {
-      color: #ffffff;
+      color: #000000;
       font-family: txt;
       font-size: 20px;
       padding: 20px; }
       .main .resumen .txt-resumen h1 {
-        color: #000000; }
+        color: #ffffff; }
   .main .titulo {
     width: 250px;
     font-family: nyf;
