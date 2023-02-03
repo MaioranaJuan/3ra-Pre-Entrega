@@ -29,24 +29,24 @@ li {
 a {
   text-decoration: none; }
 
-.tarjetas img, .game img, .game2 img {
+.main .tarjetas img, .descargas-main .game img, .descargas-main .game2 img {
   width: 100%;
   height: 100%; }
 
-.tarjetas .img-card {
+.main .tarjetas .img-card {
   background-image: url(../assets/Puerta-Konoha.jpg);
   background-size: cover;
   height: 200px;
   width: 100%; }
 
-.tarjetas img {
+.main .tarjetas img {
   transition: 0.5s;
   filter: grayscale(1); }
-  .tarjetas img:hover {
+  .main .tarjetas img:hover {
     transform: scale(1.1, 1.1);
     filter: grayscale(0); }
 
-.game, .game2 {
+.descargas-main .game, .descargas-main .game2 {
   background-color: #191919;
   padding: 30px;
   display: grid;
@@ -54,16 +54,14 @@ a {
   grid-template-rows: auto;
   gap: 10px; }
 
-.formulario .form .casilla1, .formulario .form .casilla2, .formulario .form .casilla3 {
+.contacto-main .formulario .form .casilla1, .contacto-main .formulario .form .casilla2, .contacto-main .formulario .form .casilla3 {
   font-family: cards;
-  display: flex;
-  flex-direction: column;
   font-size: 20px;
   gap: 15px; }
-  .formulario .form .casilla1 input, .formulario .form .casilla2 input, .formulario .form .casilla3 input,
-  .formulario .form .casilla1 textarea,
-  .formulario .form .casilla2 textarea,
-  .formulario .form .casilla3 textarea {
+  .contacto-main .formulario .form .casilla1 input, .contacto-main .formulario .form .casilla2 input, .contacto-main .formulario .form .casilla3 input,
+  .contacto-main .formulario .form .casilla1 textarea,
+  .contacto-main .formulario .form .casilla2 textarea,
+  .contacto-main .formulario .form .casilla3 textarea {
     padding: 10px;
     resize: none;
     width: 100%; }
@@ -105,37 +103,31 @@ header {
   display: flex;
   justify-content: space-between;
   /* redes */
-  /* footer nav */
-  /* footer logo */ }
+  /* footer logo */
+  /* footer nav */ }
   .footer .redes {
     background-color: #000000;
     padding: 10px;
-    color: #ffff;
-    justify-content: space-evenly; }
-    .footer .redes .redes1 {
-      display: grid;
-      grid-template-columns: repeat(3, 90px);
-      grid-template-rows: auto;
-      grid-template-areas: 'area1 .. area3' '.. area2 ..'; }
-      .footer .redes .redes1 .ig {
-        color: #dc143c;
-        grid-area: area1; }
-      .footer .redes .redes1 .fb {
-        color: #0000ff;
-        grid-area: area3; }
-      .footer .redes .redes1 .tw {
-        color: #7fffd4;
-        grid-area: area2; }
-  .footer .footnav {
-    background-color: #000000;
-    padding: 10px;
-    padding-right: 180px; }
-    .footer .footnav .color-foot {
-      color: #ffffff; }
+    color: #ffff; }
+    .footer .redes .redes1 .ig {
+      color: #dc143c;
+      grid-area: area1; }
+    .footer .redes .redes1 .fb {
+      color: #0000ff;
+      grid-area: area3; }
+    .footer .redes .redes1 .tw {
+      color: #7fffd4;
+      grid-area: area2; }
   .footer .logof a {
     font-size: 50px;
     color: #ffff;
     -webkit-text-stroke: 2px #000000; }
+  .footer .footnav {
+    background-color: #000000;
+    padding: 10px;
+    padding-right: 180px; }
+    .footer .footnav a {
+      color: #ffffff; }
 
 .btn-descarga {
   font-size: 30px;
@@ -150,111 +142,90 @@ header {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  padding: 200px 30px 10px 30px; }
-
-.resumen {
-  background-color: #DC5F00;
-  display: flex;
-  border-radius: 20px; }
-  .resumen .img-resumen {
-    object-fit: contain;
-    height: 100%;
-    width: 60%;
-    border-radius: 20px;
-    box-shadow: 10px 0px 15px 0px #000000; }
-  .resumen .txt-resumen {
-    color: #ffffff;
-    font-family: txt;
+  padding: 200px 30px 10px 30px;
+  /* tarjetas */
+  /* secciones */ }
+  .main .resumen {
+    background-color: #DC5F00;
+    display: flex;
+    border-radius: 20px; }
+    .main .resumen .img-resumen {
+      object-fit: contain;
+      height: 100%;
+      width: 60%;
+      border-radius: 20px;
+      box-shadow: 10px 0px 15px 0px #000000; }
+    .main .resumen .txt-resumen {
+      color: #ffffff;
+      font-family: txt;
+      font-size: 20px;
+      padding: 20px; }
+      .main .resumen .txt-resumen h1 {
+        color: #000000; }
+  .main .titulo {
+    width: 250px;
+    font-family: nyf;
     font-size: 20px;
-    padding: 20px; }
-
-/* tarjetas */
-.tarjetas {
-  display: flex;
-  color: #000000;
-  justify-content: space-evenly;
-  padding-bottom: 20px;
-  flex-wrap: wrap; }
-  .tarjetas .card1 {
-    height: 100%;
-    width: 300px;
+    color: #ffffff;
+    background-color: #413d3d;
     padding: 10px;
-    background-color: #DC5F00; }
-  .tarjetas .card2 {
-    height: 100%;
-    width: 300px;
-    padding: 10px;
-    background-color: #DC5F00; }
-  .tarjetas .card3 {
-    height: 500px;
-    width: 300px;
-    padding: 10px;
-    background-color: #DC5F00; }
-  .tarjetas .card4 {
-    height: 500px;
-    width: 300px;
-    padding: 10px;
-    background-color: #DC5F00; }
-
-.titulo {
-  width: 250px;
-  font-family: nyf;
-  font-size: 20px;
-  color: #ffffff;
-  background-color: #413d3d;
-  margin: 20px;
-  padding: 10px; }
-
-.subtitulos {
-  font-family: subtitulo;
-  font-size: 30px; }
-
-/* secciones */
-.secciones {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: auto;
-  gap: 30px; }
-  .secciones div {
-    transition: 0.5s;
-    filter: grayscale(1); }
-    .secciones div:hover {
-      transform: scale(1.05, 1.05);
-      filter: grayscale(0); }
-    .secciones div p {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: nyf;
-      font-size: 50px;
-      color: #ffff;
-      -webkit-text-stroke: 2px #000000; }
-  .secciones .aldeas {
-    background-image: url(../assets/Aldeas.png);
-    background-position: center;
-    background-size: cover; }
-  .secciones .tecnicasElementales {
-    background-image: url(../assets/Tecnicaselementales.jpg);
-    background-position: center;
-    background-size: cover; }
-  .secciones .personajes {
-    background-image: url(../assets/personajes.jpg);
-    background-position: center;
-    background-size: cover; }
-
-.section {
-  width: 100%;
-  height: 500px; }
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .main .tarjetas {
+    display: flex;
+    color: #000000;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    flex-wrap: wrap; }
+    .main .tarjetas .card1 {
+      height: 100%;
+      width: 300px;
+      padding: 10px;
+      background-color: #DC5F00; }
+    .main .tarjetas .card2 {
+      height: 100%;
+      width: 300px;
+      padding: 10px;
+      background-color: #DC5F00; }
+    .main .tarjetas .card3 {
+      height: 500px;
+      width: 300px;
+      padding: 10px;
+      background-color: #DC5F00; }
+    .main .tarjetas .card4 {
+      height: 500px;
+      width: 300px;
+      padding: 10px;
+      background-color: #DC5F00; }
+    .main .tarjetas .subtitulos {
+      font-family: subtitulo;
+      font-size: 30px; }
+  .main .secciones {
+    gap: 30px; }
+    .main .secciones div {
+      transition: 0.5s;
+      filter: grayscale(1); }
+      .main .secciones div:hover {
+        transform: scale(1.05, 1.05);
+        filter: grayscale(0); }
+      .main .secciones div p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: nyf;
+        font-size: 50px;
+        color: #ffff;
+        -webkit-text-stroke: 2px #000000; }
+    .main .secciones .aldeas {
+      background-image: url(../assets/Aldeas.png);
+      background-position: center;
+      background-size: cover; }
+    .main .secciones .tecnicasElementales {
+      background-image: url(../assets/Tecnicaselementales.jpg);
+      background-position: center;
+      background-size: cover; }
 
 /* DESCARGAS */
-.descargas-main {
-  padding: 40px;
-  background-image: url(../assets/fondo/5033317.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover; }
-
-/* JUEGOS */
 .celularDescargas {
   background: radial-gradient(circle, #80808077, #000000), url(../assets/NarutoTriste.jpg);
   background-size: cover;
@@ -262,74 +233,67 @@ header {
   color: #ffffff;
   font-family: nyf;
   font-size: 30px;
-  padding: 80px;
-  height: 100vh; }
+  padding: 80px; }
 
-.game {
-  grid-template-areas: 'f1 f6 f6' 'f2 f2 f3' 'f2 f2 f4' 'f5 f5 boton'; }
-
-.game2 {
-  grid-template-areas: 'f1 f6 f6' 'f1 f5 f5' 'f2 f3 f4' '.. boton boton'; }
-
-.f1 {
-  grid-area: f1; }
-
-.f2 {
-  grid-area: f2; }
-
-.f3 {
-  grid-area: f3; }
-
-.f4 {
-  grid-area: f4; }
-
-.f5 {
-  grid-area: f5; }
-
-.f6 {
-  grid-area: f6;
-  color: #ffffff; }
-
-.btnarea {
-  grid-area: boton; }
+.descargas-main {
+  padding: 40px;
+  background-image: url(../assets/fondo/5033317.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  /* JUEGOS */ }
+  .descargas-main .game {
+    grid-template-areas: 'f1 f6 f6' 'f2 f2 f3' 'f2 f2 f4' 'f5 f5 boton'; }
+  .descargas-main .game2 {
+    grid-template-areas: 'f1 f6 f6' 'f1 f5 f5' 'f2 f3 f4' '.. boton boton'; }
+  .descargas-main .f1 {
+    grid-area: f1; }
+  .descargas-main .f2 {
+    grid-area: f2; }
+  .descargas-main .f3 {
+    grid-area: f3; }
+  .descargas-main .f4 {
+    grid-area: f4; }
+  .descargas-main .f5 {
+    grid-area: f5; }
+  .descargas-main .f6 {
+    grid-area: f6;
+    color: #ffffff; }
+  .descargas-main .btnarea {
+    grid-area: boton; }
 
 /* CONTACTO */
 .contacto-main {
   background-color: #191919;
   padding: 50px; }
-
-.contacto-img {
-  background-image: url(../assets/Banner2.jpg);
-  background-position: center;
-  height: 130px; }
-
-.formulario {
-  display: flex;
-  align-items: center;
-  padding: 10px; }
-  .formulario img {
-    object-fit: cover;
-    padding: 50px; }
-  .formulario .form {
-    background-color: #000000;
-    color: #ffff;
-    padding: 30px;
-    width: 100%;
-    height: 530px; }
-    .formulario .form .casilla1 {
-      flex-direction: row; }
-    .formulario .form .buttonSend {
-      display: flex;
-      justify-content: end;
-      padding-top: 10px; }
-
-.btnContacto {
-  font-size: 20px;
-  font-family: nyf;
-  width: 80px;
-  background-color: #3c3cdd;
-  border-radius: 8px;
-  padding: 5px; }
+  .contacto-main .contacto-img {
+    background-image: url(../assets/Banner2.jpg);
+    background-position: center;
+    height: 130px; }
+  .contacto-main .formulario {
+    display: flex;
+    align-items: center;
+    padding: 10px; }
+    .contacto-main .formulario img {
+      object-fit: cover;
+      padding: 50px; }
+    .contacto-main .formulario .form {
+      background-color: #000000;
+      color: #ffff;
+      padding: 30px;
+      width: 100%;
+      height: 525px; }
+      .contacto-main .formulario .form .buttonSend {
+        display: flex;
+        justify-content: end;
+        padding-top: 10px; }
+        .contacto-main .formulario .form .buttonSend .btnContacto {
+          font-size: 20px;
+          font-family: nyf;
+          width: 80px;
+          background-color: #3c3cdd;
+          border-radius: 8px;
+          padding: 5px; }
 
 /* Bootstrap (Aldeas)*/
 .row {
@@ -368,105 +332,56 @@ header {
     height: 100%; }
   .tarjetas {
     gap: 20px;
-    flex-direction: column;
     align-items: center; }
-  /* footer */
-  .redes {
-    width: 30%; }
-  .redes1 {
-    display: flex;
-    flex-direction: column; }
-  .logof {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30%; }
-  .logof h2 {
-    font-size: 30px; }
-  .footnav {
-    width: 30%;
-    padding-right: 0px; }
-  /* CONTACTO */
-  .formulario img {
-    display: none; }
-  .form {
-    height: 380px; }
-  /* DESCARGAS */
-  .descargas-main {
-    display: none; }
-  .celularDescargas {
-    display: flex; }
   .secciones {
     display: flex;
     flex-direction: column; }
-  .section {
-    height: 150px; } }
-
-@media only screen and (min-width: 480px) {
-  .resumen {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 40px;
-    height: 100%; }
-  .tarjetas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 10px; }
-  .cardEquipo7 {
+    .secciones .section {
+      height: 150px; }
+  /* footer */
+  .footer {
     width: 100%; }
-  /* FOOTER */
-  .redes {
-    width: 30%; }
-  .redes1 {
-    display: flex;
-    flex-direction: column; }
-  .logof {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30%; }
-  .logof h2 {
-    font-size: 40px; }
-  .footnav {
-    width: 30%;
-    padding-right: 0px; }
+    .footer .redes {
+      flex-direction: column;
+      width: 30%; }
+      .footer .redes .redes1 {
+        flex-direction: column; }
+    .footer .logof {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30%; }
+      .footer .logof h2 {
+        font-size: 30px; }
+    .footer .footnav {
+      width: 30%;
+      padding-right: 0px; }
+  /* CONTACTO */
+  .formulario img {
+    display: none; }
   /* DESCARGAS */
   .descargas-main {
     display: none; }
   .celularDescargas {
-    display: flex; }
-  /* CONTACTO */
-  .formulario img {
-    display: none; }
-  .form {
-    height: 380px; } }
+    display: flex; } }
 
 @media only screen and (min-width: 768px) {
-  .tarjetas {
+  .casilla1 {
+    display: flex;
+    flex-direction: row; }
+  .secciones {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: auto;
-    gap: 20px; }
-  /* CONTACTO */
-  .contacto-main {
-    padding-bottom: 300px; }
-  /* FOOTER */
-  .redes {
-    width: 30%; }
+    gap: 30px; }
+    .secciones .section {
+      width: 100%;
+      height: 500px; }
   .redes1 {
-    display: flex;
-    flex-direction: column; }
-  .logof {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30%; }
-  .logof h2 {
-    font-size: 40px; }
-  .footnav {
-    width: 30%;
-    padding-right: 0px; } }
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: auto;
+    grid-template-areas: 'area1 .. area3' '.. area2 ..'; } }
 
 @media only screen and (min-width: 1200px) {
   .resumen {
@@ -475,23 +390,9 @@ header {
   .tarjetas {
     display: flex;
     flex-direction: row; }
-  .cardEquipo7 {
-    height: 500px; }
-  .secciones {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: auto;
-    gap: 30px; }
-  .section {
-    width: 100%;
-    height: 500px; }
   .celularDescargas {
     display: none; }
   .descargas-main {
     display: block; }
-  .form {
-    height: 530px; }
   .formulario img {
-    display: block; }
-  .contacto-main {
-    padding-bottom: 0px; } }
+    display: block; } }

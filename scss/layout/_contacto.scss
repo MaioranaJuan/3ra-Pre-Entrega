@@ -3,59 +3,58 @@
 .contacto-main {
     background-color: #191919;
     padding: 50px;
-}
 
-.contacto-img {
-    background-image: url(../assets/Banner2.jpg);
-    background-position: center;
-    height: 130px;
-}
 
-.formulario {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-
-    img {
-        object-fit: cover;
-        padding: 50px;
+    .contacto-img {
+        background-image: url(../assets/Banner2.jpg);
+        background-position: center;
+        height: 130px;
     }
 
-    .form {
-        background-color: #000000;
-        color: #ffff;
-        padding: 30px;
-        width: 100%;
-        height: 530px;
+    .formulario {
+        display: flex;
+        align-items: center;
+        padding: 10px;
 
-        .casilla1 {
-            @extend %casilla;
-            flex-direction: row;
+        img {
+            object-fit: cover;
+            padding: 50px;
         }
 
-        .casilla2 {
-            @extend %casilla;
-        }
+        .form {
+            background-color: #000000;
+            color: #ffff;
+            padding: 30px;
+            width: 100%;
+            height: 525px;
 
-        .casilla3 {
-            @extend %casilla;
-        }
+            .casilla1 {
+                @extend %casilla;
+            }
 
-        .buttonSend {
-            display: flex;
-            justify-content: end;
-            padding-top: 10px;
+            .casilla2 {
+                @extend %casilla;
+            }
+
+            .casilla3 {
+                @extend %casilla;
+            }
+
+            .buttonSend {
+                display: flex;
+                justify-content: end;
+                padding-top: 10px;
+
+                .btnContacto {
+                    font-size: 20px;
+                    font-family: nyf;
+                    width: 80px;
+                    background-color: #3c3cdd;
+                    border-radius: 8px;
+                    padding: 5px;
+                }
+            }
         }
     }
-}
 
-
-
-.btnContacto {
-    font-size: 20px;
-    font-family: nyf;
-    width: 80px;
-    background-color: #3c3cdd;
-    border-radius: 8px;
-    padding: 5px;
 }

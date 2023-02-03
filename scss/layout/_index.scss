@@ -5,120 +5,116 @@
     background-position: center;
     background-size: cover;
     padding: 200px 30px 10px 30px;
-}
 
-.resumen {
-    background-color: $ColorPrin;
-    display: flex;
-    border-radius: 20px;
 
-    .img-resumen {
-        object-fit: contain;
-        height: 100%;
-        width: 60%;
+    .resumen {
+        background-color: $ColorPrin;
+        display: flex;
         border-radius: 20px;
-        box-shadow: 10px 0px 15px 0px #000000;
+
+        .img-resumen {
+            object-fit: contain;
+            height: 100%;
+            width: 60%;
+            border-radius: 20px;
+            box-shadow: 10px 0px 15px 0px #000000;
+        }
+
+        .txt-resumen {
+            color: #ffffff;
+            font-family: $Text;
+            font-size: 20px;
+            padding: 20px;
+
+            h1 {
+                color: #000000;
+            }
+        }
     }
 
-    .txt-resumen {
-        color: #ffffff;
-        font-family: $Text;
+    /* tarjetas */
+
+    .titulo {
+        width: 250px;
+        font-family: $TextNyF;
         font-size: 20px;
-        padding: 20px;
-    }
-}
-
-/* tarjetas */
-.tarjetas {
-    display: flex;
-    color: #000000;
-    justify-content: space-evenly;
-    padding-bottom: 20px;
-    flex-wrap: wrap;
-
-    .card1 {
-        @include CardsTam(100%, 300px, 10px, $ColorPrin);
+        color: #ffffff;
+        background-color: #413d3d;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
-    .card2 {
-        @include CardsTam(100%, 300px, 10px, $ColorPrin);
-    }
+    .tarjetas {
+        display: flex;
+        color: #000000;
+        justify-content: space-evenly;
+        padding-bottom: 20px;
+        flex-wrap: wrap;
 
-    .card3 {
-        @include CardsTam(500px, 300px, 10px, $ColorPrin);
-    }
-
-    .card4 {
-        @include CardsTam(500px, 300px, 10px, $ColorPrin);
-    }
-
-    img {
-        @extend %hover;
-    }
-
-    .img-card {
-        @extend %konoha;
-    }
-
-}
-
-
-.titulo {
-    width: 250px;
-    font-family: nyf;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #413d3d;
-    margin: 20px;
-    padding: 10px;
-}
-
-.subtitulos {
-    font-family: $TextSubt;
-    font-size: 30px;
-}
-
-/* secciones */
-.secciones {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: auto;
-    gap: 30px;
-
-    div {
-        transition: 0.5s;
-        filter: grayscale(1);
-
-        &:hover {
-            transform: scale(1.05, 1.05);
-            filter: grayscale(0);
+        .card1 {
+            @include CardsTam(100%, 300px, 10px, $ColorPrin);
         }
 
-        p {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: nyf;
-            font-size: 50px;
-            color: #ffff;
-            -webkit-text-stroke: 2px #000000;
+        .card2 {
+            @include CardsTam(100%, 300px, 10px, $ColorPrin);
         }
+
+        .card3 {
+            @include CardsTam(500px, 300px, 10px, $ColorPrin);
+        }
+
+        .card4 {
+            @include CardsTam(500px, 300px, 10px, $ColorPrin);
+        }
+
+        img {
+            @extend %hover;
+        }
+
+        .img-card {
+            @extend %konoha;
+        }
+
+        .subtitulos {
+            font-family: $TextSubt;
+            font-size: 30px;
+        }
+
     }
 
-    .aldeas {
-        @include Secciones(url(../assets/Aldeas.png), center, cover);
+    /* secciones */
+    .secciones {
+        gap: 30px;
+
+        div {
+            transition: 0.5s;
+            filter: grayscale(1);
+
+            &:hover {
+                transform: scale(1.05, 1.05);
+                filter: grayscale(0);
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: $TextNyF;
+                font-size: 50px;
+                color: #ffff;
+                -webkit-text-stroke: 2px #000000;
+            }
+        }
+
+        .aldeas {
+            @include Secciones(url(../assets/Aldeas.png), center, cover);
+        }
+
+        .tecnicasElementales {
+            @include Secciones(url(../assets/Tecnicaselementales.jpg), center, cover);
+        }
+
     }
 
-    .tecnicasElementales {
-        @include Secciones(url(../assets/Tecnicaselementales.jpg), center, cover);
-    }
-
-    .personajes {
-        @include Secciones(url(../assets/personajes.jpg), center, cover);
-    }
-}
-
-.section {
-    width: 100%;
-    height: 500px;
 }

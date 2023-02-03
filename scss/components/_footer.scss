@@ -12,16 +12,8 @@
         background-color: #000000;
         padding: 10px;
         color: #ffff;
-        justify-content: space-evenly;
 
         .redes1 {
-            display: grid;
-            grid-template-columns: repeat(3, 90px);
-            grid-template-rows: auto;
-            grid-template-areas:
-                'area1 .. area3'
-                '.. area2 ..';
-
 
             .ig {
                 color: #dc143c;
@@ -40,23 +32,23 @@
         }
     }
 
-    /* footer nav */
-    .footnav {
-        background-color: #000000;
-        padding: 10px;
-        padding-right: 180px;
-
-        .color-foot {
-            color: #ffffff;
-        }
-    }
-
     /* footer logo */
 
     .logof a {
         font-size: 50px;
         color: #ffff;
         -webkit-text-stroke: 2px #000000;
+    }
+
+    /* footer nav */
+    .footnav {
+        background-color: #000000;
+        padding: 10px;
+        padding-right: 180px;
+
+        a {
+            color: #ffffff;
+        }
     }
 
 }
