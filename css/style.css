@@ -75,10 +75,10 @@ header {
   top: 0;
   z-index: 2; }
   header .logo {
-    font-size: 32px; }
+    font-size: 15px; }
     header .logo img {
-      height: 32px;
-      width: 32px; }
+      width: 15px;
+      height: 15px; }
   header nav {
     display: flex;
     justify-content: space-between;
@@ -328,11 +328,6 @@ header {
   /* INDEX */
   .header {
     width: 100%; }
-    .header .logo {
-      font-size: 15px; }
-      .header .logo img {
-        width: 15px;
-        height: 15px; }
   .resumen {
     flex-direction: column;
     align-items: center;
@@ -374,6 +369,11 @@ header {
     display: flex; } }
 
 @media only screen and (min-width: 768px) {
+  .logo {
+    font-size: 32px; }
+    .logo img {
+      height: 32px;
+      width: 32px; }
   .casilla1 {
     display: flex;
     flex-direction: row; }
