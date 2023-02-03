@@ -76,6 +76,9 @@ header {
   z-index: 2; }
   header .logo {
     font-size: 32px; }
+    header .logo img {
+      height: 32px;
+      width: 32px; }
   header nav {
     display: flex;
     justify-content: space-between;
