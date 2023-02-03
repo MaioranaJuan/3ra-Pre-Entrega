@@ -1,0 +1,22 @@
+{
+  "name": "datanaru-3ra-pre-entrega",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --inlude-path sass ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaioranaJuan/3ra-Pre-Entrega.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaioranaJuan/3ra-Pre-Entrega/issues"
+  },
+  "homepage": "https://github.com/MaioranaJuan/3ra-Pre-Entrega#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
