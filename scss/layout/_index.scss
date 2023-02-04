@@ -53,27 +53,39 @@
         flex-wrap: wrap;
 
         .card1 {
-            @include CardsTam(100%, 300px, 10px, $ColorPrin);
+            @include CardsTam(300px, 10px, $ColorPrin);
+
+            img {
+                @include FondosCard(url(../assets/Puerta-Konoha.jpg), cover, 350px, 100%);
+            }
         }
 
         .card2 {
-            @include CardsTam(100%, 300px, 10px, $ColorPrin);
+            @include CardsTam(300px, 10px, $ColorPrin);
+
+            img {
+                @include FondosCard(url(../assets/Puerta-Konoha.jpg), cover, 350px, 100%);
+            }
         }
 
         .card3 {
-            @include CardsTam(500px, 300px, 10px, $ColorPrin);
+            @include CardsTam(300px, 10px, #cfa275);
+
+            img {
+                @include FondosCard(url(../assets/Puerta-Konoha.jpg), cover, 350px, 100%);
+            }
         }
 
         .card4 {
-            @include CardsTam(500px, 300px, 10px, $ColorPrin);
+            @include CardsTam(300px, 10px, $ColorPrin);
+
+            img {
+                @include FondosCard(url(../assets/Puerta-Konoha.jpg), cover, 350px, 100%);
+            }
         }
 
-        img {
+        .hovcard{
             @extend %hover;
-        }
-
-        .img-card {
-            @extend %konoha;
         }
 
         .subtitulos {

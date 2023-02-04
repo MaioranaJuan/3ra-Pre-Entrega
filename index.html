@@ -5,46 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
 
 
 
-
-    
+    <!-- linkeos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/b4fcd4fa61.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/Favicon.png" type="image/x-icon">
-    <title>DataNaru | Inicio</title>
 
 </head>
 
 <body>
 
-    <!--Navegador-->
-    <header class="header">
-        <nav>
-            <a class="logo" href="./index.html">
-                <img src="./assets/logo.png" alt="Simbolo de Konoha">
-                DataNaru
-            </a>
-            <ul>
-                <li>
-                    <a class="inicio" href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./pages/aldeas.html">Aldeas</a>
-                </li>
-                <li>
-                    <a href="./pages/tecnicasElementales.html">Tecnicas Elementales</a>
-                </li>
-                <li>
-                    <a href="./pages/descargas.html">Descargas</a>
-                </li>
-                <li>
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <!--Navegador bootstrap-->
+    <header class="navPerso">
+        <nav class="navbar navbar-expand-md d-flex">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="me-auto navbar-brand logo" href="./index.html">
+                        <img src="./assets/logo.png" alt="Simbolo de Konoha">
+                        DataNaru</a>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./index.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Inicio
+                            </a>
+                            <ul class="dropdown-menu navPerso">
+                                <li><a class="dropdown-item" href="./index.html">Inicio</a></li>
+                                <li><a class="dropdown-item" href="./pages/aldeas.html">Aldeas</a></li>
+                                <li><a class="dropdown-item" href="./pages/tecnicasElementales.html">Tecnicas
+                                        Elementales</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/descargas.html">Descargas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -89,11 +99,11 @@
         </section>
 
         <!-- tarjetas  equipo 7-->
-        <h2 class="titulo">Equipo 7:</h2>
+        <h2 class="titulo">Personajes Destacables:</h2>
         <section class="tarjetas">
             <!-- kakashi -->
-            <div class="card1">
-                <div class="img-card">
+            <div class="card1 hovcard">
+                <div>
                     <img src="./assets/kakashi.png" alt="Kakashi">
                 </div>
                 <h2 class="subtitulos">Kakashi Hatake</h2>
@@ -105,8 +115,8 @@
                     técnicas de otros ninjas, lo que le ha valido el apodo de "Ninja que copia".</p>
             </div>
             <!-- naruto -->
-            <div class="card2">
-                <div class="img-card">
+            <div class="card2 hovcard">
+                <div>
                     <img src="./assets/naruto.png" alt="Naruto">
                 </div>
                 <h2 class="subtitulos">Naruto Uzumaki</h2>
@@ -117,20 +127,24 @@
                     grupo cambia a partir de que Sasuke decide abandonar la aldea para llevar a cabo su venganza
                     personal. Poco después, Naruto se convierte en aprendiz de Jiraiya.</p>
             </div>
-            <!-- sakura -->
-            <div class="card3">
-                <div class="img-card">
-                    <img src="./assets/sakura.png" alt="Sakura">
+            <!-- Gaara -->
+            <div class="card3 hovcard">
+                <div>
+                    <img src="./assets/Gaara.png" alt="Gaara">
                 </div>
-                <h2 class="subtitulos">Sakura Haruno</h2>
-                <p>Sakura Haruno es la única chica del equipo. Inicialmente está enamorada de
-                    Sasuke y desprecia a Naruto. Al avanzar la historia ve que Sasuke no tiene ningún interés en
-                    ella y empieza a apreciar a Naruto. Se convierte en aprendiz de Tsunade, con quien aprende
-                    técnicas medicinales ninja.</p>
+                <h2 class="subtitulos">Gaara</h2>
+                <p>Gaara, tambien conocido como Gaara del desierto, es el hijo del cuarto kazekage y jinchuriki de
+                    shukaku. Este hace su primer aparicion junto con sus hermanos mayores Kankuro y Temari durante los
+                    examenes chunin en la aldea de la hoja, en los cuales destaca por su gran habilidad y brutalidad a
+                    la hora del combate. Este personaje a atravesado situaciones similares a Naruto devido a ser el
+                    jinchuriki de su aldea, solo que que a diferencia de Naruto este personaje se a inclinado por el
+                    lado del odio hacia todos los que lo rodean, generando esto que carezca de confianza a la hora de
+                    establecer una "relacion" con otra persona.
+                </p>
             </div>
             <!-- sasuke -->
-            <div class="card4">
-                <div class="img-card">
+            <div class="card4 hovcard">
+                <div>
                     <img src="./assets/sasuke.png" alt="Sasuke">
                 </div>
                 <h2 class="subtitulos">Sasuke Uchiha</h2>
@@ -201,6 +215,10 @@
         </section>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 
 </body>
 

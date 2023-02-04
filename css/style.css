@@ -33,20 +33,19 @@ li {
 a {
   text-decoration: none; }
 
-.main .tarjetas img, .descargas-main .game img, .descargas-main .game2 img {
+body {
+  font-size: medium;
+  line-height: normal;
+  font-family: none; }
+
+.main .tarjetas .hovcard, .descargas-main .game img, .descargas-main .game2 img {
   width: 100%;
   height: 100%; }
 
-.main .tarjetas .img-card {
-  background-image: url(../assets/Puerta-Konoha.jpg);
-  background-size: cover;
-  height: 200px;
-  width: 100%; }
-
-.main .tarjetas img {
+.main .tarjetas .hovcard {
   transition: 0.5s;
-  filter: grayscale(1); }
-  .main .tarjetas img:hover {
+  filter: blur(3px); }
+  .main .tarjetas .hovcard:hover {
     transform: scale(1.1, 1.1);
     filter: grayscale(0); }
 
@@ -59,9 +58,7 @@ a {
   gap: 10px; }
 
 .contacto-main .formulario .form .casilla1, .contacto-main .formulario .form .casilla2, .contacto-main .formulario .form .casilla3 {
-  font-family: cards;
-  font-size: 20px;
-  gap: 15px; }
+  font-family: cards; }
   .contacto-main .formulario .form .casilla1 input, .contacto-main .formulario .form .casilla2 input, .contacto-main .formulario .form .casilla3 input,
   .contacto-main .formulario .form .casilla1 textarea,
   .contacto-main .formulario .form .casilla2 textarea,
@@ -177,25 +174,41 @@ header {
     padding-bottom: 20px;
     flex-wrap: wrap; }
     .main .tarjetas .card1 {
-      height: 100%;
       width: 300px;
       padding: 10px;
       background-color: #DC5F00; }
+      .main .tarjetas .card1 img {
+        background-image: url(../assets/Puerta-Konoha.jpg);
+        background-size: cover;
+        height: 350px;
+        width: 100%; }
     .main .tarjetas .card2 {
-      height: 100%;
       width: 300px;
       padding: 10px;
       background-color: #DC5F00; }
+      .main .tarjetas .card2 img {
+        background-image: url(../assets/Puerta-Konoha.jpg);
+        background-size: cover;
+        height: 350px;
+        width: 100%; }
     .main .tarjetas .card3 {
-      height: 500px;
       width: 300px;
       padding: 10px;
-      background-color: #DC5F00; }
+      background-color: #cfa275; }
+      .main .tarjetas .card3 img {
+        background-image: url(../assets/Puerta-Konoha.jpg);
+        background-size: cover;
+        height: 350px;
+        width: 100%; }
     .main .tarjetas .card4 {
-      height: 500px;
       width: 300px;
       padding: 10px;
       background-color: #DC5F00; }
+      .main .tarjetas .card4 img {
+        background-image: url(../assets/Puerta-Konoha.jpg);
+        background-size: cover;
+        height: 350px;
+        width: 100%; }
     .main .tarjetas .subtitulos {
       font-family: subtitulo;
       font-size: 30px; }
@@ -296,8 +309,7 @@ header {
       background-color: #000000;
       color: #ffff;
       padding: 30px;
-      width: 100%;
-      height: 525px; }
+      width: 100%; }
       .contacto-main .formulario .form .buttonSend {
         display: flex;
         justify-content: end;
@@ -348,8 +360,7 @@ ul {
     padding-top: 40px;
     height: 100%; }
   .tarjetas {
-    gap: 20px;
-    align-items: center; }
+    gap: 20px; }
   .secciones {
     display: flex;
     flex-direction: column; }
@@ -383,13 +394,16 @@ ul {
 
 @media only screen and (min-width: 768px) {
   .logo {
-    font-size: 32px; }
+    display: flex;
+    font-size: 32px;
+    align-items: center; }
     .logo img {
       height: 32px;
       width: 32px; }
   .casilla1 {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    gap: 3px; }
   .contacto-img h1 {
     font-size: 70px; }
   .secciones {
