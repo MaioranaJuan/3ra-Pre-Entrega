@@ -32,4 +32,8 @@ ul{
     img {
         height: 300px;
     }
+
+    .imgRendi img{
+        @extend %imagen;
+    }
 }
