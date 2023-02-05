@@ -72,7 +72,7 @@
             @include CardsTam(300px, 10px, #cfa275);
 
             img {
-                @include FondosCard(url(../assets/ArenaCard.png), cover, 350px, 100%);
+                @include FondosCard(url(../assets/ArenaCard.jpg), cover, 350px, 100%);
             }
         }
 
