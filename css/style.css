@@ -177,7 +177,7 @@ header {
       padding: 10px;
       background-color: #047c7c; }
       .main .tarjetas .card1 img {
-        background-image: url(../assets/NieblaCard.png);
+        background-image: url(../assets/NieblaCard.WebP);
         background-size: contain;
         height: 350px;
         width: 100%; }
@@ -195,7 +195,7 @@ header {
       padding: 10px;
       background-color: #cfa275; }
       .main .tarjetas .card3 img {
-        background-image: url(../assets/ArenaCard.jpg);
+        background-image: url(../assets/ArenaCard.WebP);
         background-size: cover;
         height: 350px;
         width: 100%; }

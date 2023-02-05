@@ -56,7 +56,7 @@
             @include CardsTam(300px, 10px, #047c7c);
 
             img {
-                @include FondosCard(url(../assets/NieblaCard.png), contain, 350px, 100%);
+                @include FondosCard(url(../assets/NieblaCard.WebP), contain, 350px, 100%);
             }
         }
 
@@ -72,7 +72,7 @@
             @include CardsTam(300px, 10px, #cfa275);
 
             img {
-                @include FondosCard(url(../assets/ArenaCard.jpg), cover, 350px, 100%);
+                @include FondosCard(url(../assets/ArenaCard.WebP), cover, 350px, 100%);
             }
         }
 
