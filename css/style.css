@@ -360,10 +360,6 @@ ul {
   .card img {
     height: 300px; }
 
-.imgRendi {
-  width: 40%;
-  height: 100%; }
-
 /* Responsive o Media q */
 @media only screen and (min-width: 320px) {
   /* INDEX */
@@ -405,7 +401,9 @@ ul {
   .descargas-main {
     display: none; }
   .celularDescargas {
-    display: flex; } }
+    display: flex; }
+  .imgRendi {
+    width: 100%; } }
 
 @media only screen and (min-width: 768px) {
   .logo {
@@ -437,7 +435,10 @@ ul {
   .logof a {
     font-size: 50px; }
     .logof a .datanaru {
-      font-size: 40px; } }
+      font-size: 40px; }
+  .imgRendi {
+    width: 40%;
+    height: 100%; } }
 
 @media only screen and (min-width: 1200px) {
   .resumen {
