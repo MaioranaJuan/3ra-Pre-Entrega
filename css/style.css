@@ -195,7 +195,7 @@ header {
       padding: 10px;
       background-color: #cfa275; }
       .main .tarjetas .card3 img {
-        background-image: url(../assets/Arenacard.png);
+        background-image: url(../assets/ArenaCard.jpg);
         background-size: cover;
         height: 350px;
         width: 100%; }
@@ -244,7 +244,10 @@ header {
   color: #ffffff;
   font-family: nyf;
   font-size: 30px;
-  padding: 80px; }
+  display: flex;
+  padding: 80px;
+  height: 100vh;
+  align-items: center; }
 
 .descargas-main {
   padding: 40px;
