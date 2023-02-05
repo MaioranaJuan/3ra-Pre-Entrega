@@ -53,15 +53,15 @@
         flex-wrap: wrap;
 
         .card1 {
-            @include CardsTam(300px, 10px, $ColorPrin);
+            @include CardsTam(300px, 10px, #047c7c);
 
             img {
-                @include FondosCard(url(../assets/Puerta-Konoha.jpg), cover, 350px, 100%);
+                @include FondosCard(url(../assets/NieblaCard.png), contain, 350px, 100%);
             }
         }
 
         .card2 {
-            @include CardsTam(300px, 10px, $ColorPrin);
+            @include CardsTam(300px, 10px, #358634);
 
             img {
                 @include FondosCard(url(../assets/Puerta-Konoha.jpg), cover, 350px, 100%);
@@ -72,7 +72,7 @@
             @include CardsTam(300px, 10px, #cfa275);
 
             img {
-                @include FondosCard(url(../assets/Puerta-Konoha.jpg), cover, 350px, 100%);
+                @include FondosCard(url(../assets/Arenacard.png), cover, 350px, 100%);
             }
         }
 
@@ -80,11 +80,11 @@
             @include CardsTam(300px, 10px, $ColorPrin);
 
             img {
-                @include FondosCard(url(../assets/Puerta-Konoha.jpg), cover, 350px, 100%);
+                @include FondosCard(url(../assets/SonidoCard.jpg), contain, 350px, 100%);
             }
         }
 
-        .hovcard{
+        img{
             @extend %hover;
         }
 

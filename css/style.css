@@ -38,16 +38,15 @@ body {
   line-height: normal;
   font-family: none; }
 
-.main .tarjetas .hovcard, .descargas-main .game img, .descargas-main .game2 img {
+.descargas-main .game img, .descargas-main .game2 img {
   width: 100%;
   height: 100%; }
 
-.main .tarjetas .hovcard {
+.main .tarjetas img {
   transition: 0.5s;
   filter: blur(3px); }
-  .main .tarjetas .hovcard:hover {
-    transform: scale(1.1, 1.1);
-    filter: grayscale(0); }
+  .main .tarjetas img:hover {
+    filter: blur(0); }
 
 .descargas-main .game, .descargas-main .game2 {
   background-color: #191919;
@@ -176,16 +175,16 @@ header {
     .main .tarjetas .card1 {
       width: 300px;
       padding: 10px;
-      background-color: #DC5F00; }
+      background-color: #047c7c; }
       .main .tarjetas .card1 img {
-        background-image: url(../assets/Puerta-Konoha.jpg);
-        background-size: cover;
+        background-image: url(../assets/NieblaCard.png);
+        background-size: contain;
         height: 350px;
         width: 100%; }
     .main .tarjetas .card2 {
       width: 300px;
       padding: 10px;
-      background-color: #DC5F00; }
+      background-color: #358634; }
       .main .tarjetas .card2 img {
         background-image: url(../assets/Puerta-Konoha.jpg);
         background-size: cover;
@@ -196,7 +195,7 @@ header {
       padding: 10px;
       background-color: #cfa275; }
       .main .tarjetas .card3 img {
-        background-image: url(../assets/Puerta-Konoha.jpg);
+        background-image: url(../assets/Arenacard.png);
         background-size: cover;
         height: 350px;
         width: 100%; }
@@ -205,8 +204,8 @@ header {
       padding: 10px;
       background-color: #DC5F00; }
       .main .tarjetas .card4 img {
-        background-image: url(../assets/Puerta-Konoha.jpg);
-        background-size: cover;
+        background-image: url(../assets/SonidoCard.jpg);
+        background-size: contain;
         height: 350px;
         width: 100%; }
     .main .tarjetas .subtitulos {
@@ -254,6 +253,15 @@ header {
   background-position: center;
   background-size: cover;
   /* JUEGOS */ }
+  .descargas-main h1 {
+    display: flex;
+    justify-content: center;
+    font-family: nyf;
+    font-size: 80px; }
+  .descargas-main h2 {
+    font-family: subtitulo;
+    background-color: #3d3a3a;
+    color: #ffffff; }
   .descargas-main .game {
     grid-template-areas: 'f1 f6 f6' 'f2 f2 f3' 'f2 f2 f4' 'f5 f5 boton'; }
   .descargas-main .game2 {

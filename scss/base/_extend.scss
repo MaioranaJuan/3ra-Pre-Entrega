@@ -4,13 +4,11 @@
 }
 
 %hover {
-    @extend %imagen;
     transition: 0.5s;
     filter: blur(3px);
 
     &:hover {
-        transform: scale(1.10, 1.10);
-        filter: grayscale(0);
+        filter: blur(0);
     }
 }
 

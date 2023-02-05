@@ -17,71 +17,84 @@
     background-position: center;
     background-size: cover;
 
-/* JUEGOS */
-.game {
-    @extend %games;
-    grid-template-areas:
-        'f1 f6 f6'
-        'f2 f2 f3'
-        'f2 f2 f4'
-        'f5 f5 boton';
 
-    img {
-        @extend %imagen;
+    h1{
+        display: flex;
+        justify-content: center;
+        font-family: $TextNyF;
+        font-size: 80px;
     }
-}
-
-.game2 {
-    @extend %games;
-    grid-template-areas:
-        'f1 f6 f6'
-        'f1 f5 f5'
-        'f2 f3 f4'
-        '.. boton boton';
-
-    img {
-        @extend %imagen;
+    h2 {
+        font-family: $TextSubt;
+        background-color: #3d3a3a;
+        color: #ffffff;
     }
-}
 
-.f1 {
-    grid-area: f1;
-}
+    /* JUEGOS */
+    .game {
+        @extend %games;
+        grid-template-areas:
+            'f1 f6 f6'
+            'f2 f2 f3'
+            'f2 f2 f4'
+            'f5 f5 boton';
 
-.f2 {
-    grid-area: f2;
-}
+        img {
+            @extend %imagen;
+        }
+    }
 
-.f3 {
-    grid-area: f3;
-}
+    .game2 {
+        @extend %games;
+        grid-template-areas:
+            'f1 f6 f6'
+            'f1 f5 f5'
+            'f2 f3 f4'
+            '.. boton boton';
 
-.f4 {
-    grid-area: f4;
-}
+        img {
+            @extend %imagen;
+        }
+    }
 
-.f5 {
-    grid-area: f5;
-}
+    .f1 {
+        grid-area: f1;
+    }
 
-.f6 {
-    grid-area: f6;
-    color: #ffffff;
-}
+    .f2 {
+        grid-area: f2;
+    }
 
-.btnarea {
-    grid-area: boton;
-}
+    .f3 {
+        grid-area: f3;
+    }
 
-.btn-descarga {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-family: $Text;
-    width: 200px;
-    background-color: #3c3cdd;
-    border-radius: 8px;
-}
+    .f4 {
+        grid-area: f4;
+    }
+
+    .f5 {
+        grid-area: f5;
+    }
+
+    .f6 {
+        grid-area: f6;
+        color: #ffffff;
+    }
+
+    .btnarea {
+        grid-area: boton;
+    }
+
+    .btn-descarga {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-family: $Text;
+        width: 200px;
+        background-color: #3c3cdd;
+        border-radius: 8px;
+    }
 
 }
