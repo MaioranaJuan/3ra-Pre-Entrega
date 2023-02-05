@@ -38,7 +38,7 @@ body {
   line-height: normal;
   font-family: none; }
 
-.descargas-main .game img, .descargas-main .game2 img, .imgRendi {
+.descargas-main .game img, .descargas-main .game2 img {
   width: 100%;
   height: 100%; }
 
@@ -359,6 +359,10 @@ ul {
   height: 100%; }
   .card img {
     height: 300px; }
+
+.imgRendi {
+  width: 40%;
+  height: 100%; }
 
 /* Responsive o Media q */
 @media only screen and (min-width: 320px) {
