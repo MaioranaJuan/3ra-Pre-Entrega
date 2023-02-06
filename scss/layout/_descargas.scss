@@ -29,12 +29,13 @@
     background-size: cover;
 
 
-    h1{
+    h1 {
         display: flex;
         justify-content: center;
         font-family: $TextNyF;
         font-size: 80px;
     }
+
     h2 {
         font-family: $TextSubt;
         background-color: #3d3a3a;
@@ -73,7 +74,10 @@
 
     .f2 {
         grid-area: f2;
-        height: 400px;
+        
+        .g2{
+            height: 400px;
+        }
     }
 
     .f3 {
@@ -91,6 +95,9 @@
 
     .btnarea {
         grid-area: boton;
+        display: grid;
+        justify-content: center;
+        align-items: center;
     }
 
     .btn-descarga {

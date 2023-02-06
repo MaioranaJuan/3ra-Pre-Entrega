@@ -278,8 +278,9 @@ header {
   .descargas-main .f1 {
     grid-area: f1; }
   .descargas-main .f2 {
-    grid-area: f2;
-    height: 400px; }
+    grid-area: f2; }
+    .descargas-main .f2 .g2 {
+      height: 400px; }
   .descargas-main .f3 {
     grid-area: f3; }
   .descargas-main .f4 {
@@ -288,7 +289,10 @@ header {
     grid-area: f5;
     color: #ffffff; }
   .descargas-main .btnarea {
-    grid-area: boton; }
+    grid-area: boton;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
   .descargas-main .btn-descarga {
     display: flex;
     justify-content: center;
