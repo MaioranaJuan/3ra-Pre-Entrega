@@ -284,9 +284,7 @@ header {
   .descargas-main .f4 {
     grid-area: f4; }
   .descargas-main .f5 {
-    grid-area: f5; }
-  .descargas-main .f6 {
-    grid-area: f6;
+    grid-area: f5;
     color: #ffffff; }
   .descargas-main .btnarea {
     grid-area: boton; }
