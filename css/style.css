@@ -250,6 +250,12 @@ header {
   align-items: center; }
 
 .descargas-main {
+  display: none; }
+
+.celularDescargas {
+  display: flex; }
+
+.descargas-main {
   padding: 40px;
   background-image: url(../assets/fondo/5033317.WebP);
   background-attachment: fixed;
@@ -401,11 +407,6 @@ ul {
   /* CONTACTO */
   .formulario img {
     display: none; }
-  /* DESCARGAS */
-  .descargas-main {
-    display: none; }
-  .celularDescargas {
-    display: flex; }
   .imgRendi {
     width: 100%; } }
 
