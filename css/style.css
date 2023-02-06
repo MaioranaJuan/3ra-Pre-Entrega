@@ -279,8 +279,8 @@ header {
     grid-area: f1; }
   .descargas-main .f2 {
     grid-area: f2; }
-    .descargas-main .f2 .g2 {
-      height: 400px; }
+  .descargas-main .g2 {
+    height: 400px; }
   .descargas-main .f3 {
     grid-area: f3; }
   .descargas-main .f4 {
