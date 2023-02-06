@@ -59,9 +59,8 @@
         @extend %games;
         grid-template-areas:
             'f1 f5 f5'
-            'f1 f5 f5'
-            'f2 f3 f4'
-            '.. boton ..';
+            'f1 f3 f4'
+            'f2 f2 boton';
 
         img {
             @extend %imagen;
